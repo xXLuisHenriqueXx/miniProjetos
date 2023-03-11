@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronometro</title>
+    <link rel="stylesheet" href="cronometro.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Cronômetro</h1>
+        <h2>Cronômetro feito com JavaScript</h2>
+        <hr>
+        <p><span id="min">00</span>:<span id="seg">00</span>:<span id="mile">00</span></p>
+        <hr>
+        <div class="btn">
+            <input type="button" value="Start" id="btnStart" onclick="startInt()">
+            <input type="button" value="Stop" id="btnStop" onclick="stopInt()">
+            <input type="button" value="Reset" id="btnReset" onclick="resetInt()">
+        </div>
+    </div>
+</body>
+<script src="cronometro.js"></script>
+</html>
