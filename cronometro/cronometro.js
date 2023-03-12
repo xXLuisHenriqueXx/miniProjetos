@@ -7,9 +7,11 @@ let appendMin = document.getElementById('min')
 let appendSeg = document.getElementById('seg')
 let appendMile = document.getElementById('mile')
 
+/*
 let btnStart = document.getElementById('btnStart')
 let btnStop = document.getElementById('btnStop')
 let btnReset = document.getElementById('btnReset')
+*/
 
 let meuIntervalo // variavel usada para os intervalos
 
