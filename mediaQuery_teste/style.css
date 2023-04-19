@@ -1,0 +1,83 @@
+/* Regras que não estão em media query vem antes */
+h1 {
+    color: red;
+}
+
+/* Sintaxe */
+@media screen and (max-width: 800px){
+    h1 {
+        color: blue;
+    }
+}
+@media print and (max-width: 600px){
+    h1{
+        color: green;
+    }
+}
+/* Todos os modos */
+@media (max-width: 700px){
+    h2 {
+        color: purple;
+    }
+}
+@media (min-width: 200px){
+    h3{
+        color: teal;
+    }
+}
+/* AND */
+@media (min-width: 300px) and (max-width: 400px){
+    h3 {
+        font-size: 3em;
+    }
+}
+/* Posição da tela */
+@media (orientation: landscape){
+    h4{
+        color: brown;
+    }
+}
+/* OR */
+@media (max-width: 200px), (orientation: landscape){
+    h3 {
+        font-size: 4em;
+    }
+}
+/* BreakPoints */
+h5 {
+    font-size: 3em;
+  }
+  
+  /* 320px - 480px = mobile */
+  /* Em mobile first não precisa de MQ */
+  h5 {
+    color: aqua;
+  }
+  
+  /* 480px - 768px = tablet */
+  @media (min-width: 480px) {
+    h5 {
+      color: burlywood;
+    }
+  }
+  
+  /* 768px - 1024px = telas menores, laptops */
+  @media (min-width: 768px) {
+    h5 {
+      color: cadetblue;
+    }
+  }
+  
+  /* 1024px - 1200px = desktop */
+  @media (min-width: 1024px) {
+    h5 {
+      color: coral;
+    }
+  }
+  
+  /* 1200 e + = telas maiores, tvs */
+  @media (min-width: 1200px) {
+    h5 {
+      color: darkorchid;
+    }
+  }
